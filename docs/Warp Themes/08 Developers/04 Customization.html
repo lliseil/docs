@@ -42,6 +42,17 @@
 
 <p>You can use the Customizer and also add your own CSS by creating a <code>custom.css</code> file inside the <code>/css</code> folder for the related style. That way your CSS won't be overwritten when you save changes in the Customizer.</p>
 
+<p>If you need to add another <code>FILE.css</code> to the template, you can proceed as per 'Add custom JavaScript' below:</p>
+
+<p>4. Put your own additional CSS file in the <code>/styles/STYLE-NAME/css/MY-CSS.css</code> directory.</p>
+
+<pre><code>&lt;?php
+
+require(__DIR__.'/../../../layouts/theme.config.php');
+
+// add script
+$this['asset']->addFile('js', 'css:MY-CSS.css');</code></pre>
+
 <h3>Add CSS without using LESS and the Customizer</h3>
 
 <p>If you are not planning to use the Customizer at all, just duplicate an existing style and delete the <code>style.less</code> file. Now the <code>/css/theme.css</code> will no longer be overwritten when compiling LESS. You can write customizations directly in the the <code>theme.css</code> file.</p>
