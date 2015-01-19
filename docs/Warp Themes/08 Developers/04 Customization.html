@@ -42,7 +42,11 @@
 
 <p>You can use the Customizer and also add your own CSS by creating a <code>custom.css</code> file inside the <code>/css</code> folder for the related style. That way your CSS won't be overwritten when you save changes in the Customizer.</p>
 
-<p>If you need to add another <code>FILE.css</code> to the template, you can proceed as per 'Add custom JavaScript' below:</p>
+<p>If you need to add another <code>FILE.css</code> to the template, ie. you want to do like (standard Joomla! way to add a custom CSS file):</p>
+
+<pre><code><link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/MY-CSS.css" type="text/css" /></code></pre>
+
+<p>you can proceed as per 'Add custom JavaScript' below:</p>
 
 <p>4. Put your own additional CSS file in the <code>/styles/STYLE-NAME/css/MY-CSS.css</code> directory.</p>
 
